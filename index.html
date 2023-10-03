@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> lec_13 Bootstrap </title>
+  <!-- ----------  Font Awsom File Style -------------- -->
+  <link rel="stylesheet" href="assets/Css/all.min.css">
+
+  <!-- ----------  Bootstrap File Style --------------- -->
+  <link rel="stylesheet" href="assets/Css/bootstrap.min.css">
+
+  <!-- ----------  Main File Style ------------------- -->
+  <link rel="stylesheet" href="assets/Css/style.css">
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header_top bg-primary d-none d-lg-flex">
+      <div class="container">
+        <div class="py-2">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-7 d-flex">
+              <ul class="d-flex gap-4 m-0 p-0 list-unstyled p-1 px-3 border-end">
+                <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-twitter fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-instagram fs-3 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-4 text-white"></i> </a> </li>
+              </ul>
+              <ul class="d-flex m-0 p-0 list-unstyled p-1 px-3">
+                <li class="d-flex gap-3 align-items-center">
+                  <i class="fa-solid fa-location-dot fs-4 text-white"></i>
+                  <p class="m-0 text-white" style="width: max-content">267 Park Avenue New York, NY 90210</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex justify-content-end">
+              <ul class="list-unstyled m-0 p-0 d-flex">
+                <li class="d-flex gap-4 align-items-center p-1 border-end text-white px-3">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p class="m-0" style="width: max-content">Quick Email</p>
+                </li>
+                <li class="d-flex gap-4 align-items-center p-1 text-white px-4">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p class="m-0 " style="width: max-content">+1 (409) 987–5874</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/Trade-X-Logo.png" alt="Logo" width="124" height="66"
+              class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  p-4">
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  HOME
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider text-dark">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-2 ml-2">
+                <a class="nav-link active text-dark " aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  HEADERS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  BLOG POST
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-2 ml-2">
+                <a class="nav-link active text-dark" aria-current="page" href="#"> CONTACT </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="Sec_Banner">
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <img src="assets/images/ecommerce-cover-2.jpg" alt="Slide1" title="Slide1">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop">
+                  <buttn class="btn-custom active">  Get Start Now  </buttn>
+                  <buttn class="btn-custom">  Contact Us  </buttn>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="assets/images/slider2.jpg" alt="slider2" title="slider2">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop w-100 d-flex  justify-content-center ">
+                  <buttn class="btn-custom active">  Get Start Now  </buttn>
+                  <buttn class="btn-custom">  Contact Us  </buttn>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="assets/images/slider3.jpg" alt="slider3" title="slider3">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop w-100 d-flex  justify-content-center ">
+                  <buttn class="btn-custom active">  Get Start Now  </buttn>
+                  <buttn class="btn-custom">  Contact Us  </buttn>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ---------------  Main File JS ------------------- -->
+  <script src="assets/Js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
