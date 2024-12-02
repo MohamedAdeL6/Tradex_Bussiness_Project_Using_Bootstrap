@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> lec_13 Bootstrap </title>
+  <!-- ----------  Font Awsom File Style -------------- -->
+  <link rel="stylesheet" href="assets/Css/all.min.css">
+
+  <!-- ----------  Bootstrap File Style --------------- -->
+  <link rel="stylesheet" href="assets/Css/bootstrap.min.css">
+
+  <!-- ----------  Main File Style ------------------- -->
+  <link rel="stylesheet" href="assets/Css/style.css">
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="header_top bg-primary d-none d-lg-flex">
+      <div class="container">
+        <div class="py-2">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-7 d-flex">
+              <ul class="d-flex gap-4 m-0 p-0 list-unstyled p-1 px-3 border-end">
+                <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-twitter fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-4 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-instagram fs-3 text-white"></i> </a> </li>
+                <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-4 text-white"></i> </a> </li>
+              </ul>
+              <ul class="d-flex m-0 p-0 list-unstyled p-1 px-3">
+                <li class="d-flex gap-3 align-items-center">
+                  <i class="fa-solid fa-location-dot fs-4 text-white"></i>
+                  <p class="m-0 text-white" style="width: max-content">267 Park Avenue New York, NY 90210</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5 d-flex justify-content-end">
+              <ul class="list-unstyled m-0 p-0 d-flex">
+                <li class="d-flex gap-4 align-items-center p-1 border-end text-white px-3">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p class="m-0" style="width: max-content">Quick Email</p>
+                </li>
+                <li class="d-flex gap-4 align-items-center p-1 text-white px-4">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p class="m-0 " style="width: max-content">+1 (409) 987–5874</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/Images/header/Trade-X-Logo.png" alt="Logo" width="124" height="66"
+              class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0  p-4">
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  HOME
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider text-dark">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-2 ml-2">
+                <a class="nav-link active text-dark " aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  HEADERS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  BLOG POST
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  FEATURES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mb-2 ml-2">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-dark" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-dark" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mb-2 ml-2">
+                <a class="nav-link active text-dark" aria-current="page" href="#"> CONTACT </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="Sec_Banner">
+
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner h-100">
+
+          <div class="carousel-item h-100 active">
+            <img src="assets/Images/Banner/slider1.jpg" alt="Slide1" title="Slide1">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop">
+                  <buttn class="btn-custom active"> Get Start Now </buttn>
+                  <buttn class="btn-custom"> Contact Us </buttn>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item h-100">
+            <img src="assets/Images/Banner/slider2.jpg" alt="slider2" title="slider2">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop w-100 d-flex  justify-content-center ">
+                  <buttn class="btn-custom active"> Get Start Now </buttn>
+                  <buttn class="btn-custom"> Contact Us </buttn>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item h-100">
+            <img src="assets/Images/Banner/slider3.jpg" alt="slider3" title="slider3">
+            <div class="overlay">
+              <div class="carousel-caption">
+                <div>
+                  <h3>What You Do Today For Peoples3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit uiooenean commodo ligula. adipiscing elit
+                    uiooenean commodo ligula.
+                  </p>
+                </div>
+
+                <div class="btn-grop w-100 d-flex  justify-content-center ">
+                  <buttn class="btn-custom active"> Get Start Now </buttn>
+                  <buttn class="btn-custom"> Contact Us </buttn>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="about" class="sec-padding sec-bg">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center">
+          <h1 class="h1_sec text-black text-center mb-3">
+            About Us
+            <span class="span_left"></span>
+            <span class="span_right"></span>
+          </h1>
+        </div>
+        <p class="sec-p">
+          About Us
+        </p>
+        <div class="row justify-content-center justify-content-lg-end my-5 position-relative">
+          <div class="col-md-12 col-lg-6 col-xl-5 mb-5 mb-lg-0 mb-xl-0">
+            <div class="detail_box">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <i class="fa-solid fa-bullhorn"></i>
+                  <div class="detail_content">
+                    <h5 class="mb-3">markating</h5>
+                    <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-bars"></i>
+                  <div class="detail_content">
+                    <h5>great usability</h5>
+                    <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-desktop"></i>
+                  <div class="detail_content">
+                    <h5>unique design</h5>
+                    <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-regular fa-thumbs-up"></i>
+                  <div class="detail_content">
+                    <h5>quick &amp; powerful</h5>
+                    <p>Lorem ipsum dolor sit amet, Aenea jkn consectetuer adipiscn elit.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="text-end">
+              <!-- <img src="assets/Images/About/abt-3.jpg.crdownload" alt="about_us" title="about_us"> -->
+              <img src="assets/Images/About/abt-3.jpg" alt="about_us" title="about_us">
+
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-5 col-xl-4">
+            <div class="d-flex flex-column">
+              <p class="mb-xl-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem accusantium
+                corporis accusamus
+                mollitia officiis veniam maiores eaque sed repudiandae. Et, dolorem voluptatibus nemo
+                dicta facilis
+                perferendis eveniet magni hic.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem accusantium
+                corporis accusamus
+                mollitia officiis veniam maiores eaque sed repudiandae. Et, dolorem voluptatibus nemo
+                dicta facilis
+                perferendis eveniet magni hic.
+              </p>
+              <p class="mb-xl-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                incididunt ut
+                labore et
+                dolore. Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem accusantium
+                corporis accusamus
+                mollitia officiis veniam maiores eaque sed repudiandae. Et, dolorem voluptatibus nemo
+                dicta facilis
+                perferendis eveniet magni hic.
+              </p>
+              <div class="w-100 d-flex justify-content-center mt-4">
+                <button class="btn btn-primary rounded-5 px-4 py-2">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reward" class="sec-padding sec_reward_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 mb-5 ps-sm-0">
+            <div class="container">
+
+
+              <div class="d-flex gap-4">
+                <div class="bg-white rounded-2">
+                  <i class="fa-solid fa-desktop text-primary"></i>
+                </div>
+                <div class="counter_box">
+                  <h3> 8000 </h3>
+                  <p class="text-secondary m-0"> Total Projects </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5 ps-sm-0">
+            <div class="container">
+
+              <div class="d-flex gap-4">
+                <div class="bg-white rounded-2">
+                  <i class="fa-solid fa-trophy text-primary"></i>
+                </div>
+                <div class="counter_box">
+                  <h3> 810 </h3>
+                  <p class="text-secondary m-0"> Won Awards </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5 ps-sm-0">
+            <div class="container">
+
+              <div class="d-flex gap-4">
+                <div class="bg-white rounded-2 ">
+                  <i class="fa-regular fa-face-smile text-primary"></i>
+                </div>
+                <div class="counter_box">
+                  <h3> 2000 </h3>
+                  <p class="text-secondary m-0"> Happy Client </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5 ps-sm-0">
+            <div class="container">
+
+              <div class="d-flex gap-4">
+                <div class="bg-white rounded-2">
+                  <i class="fa-regular fa-calendar-days text-primary"></i>
+                </div>
+                <div class="counter_box">
+                  <h3> 20 </h3>
+                  <p class="text-secondary m-0">Years Experience </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Our_Services" class="sec-padding bg-black">
+      <div class="overlay_sec py-5 px-2 p-sm-3">
+        <div class="container">
+          <div class="w-100 d-flex justify-content-center">
+            <h1 class="h1_sec text-white text-center mb-3">
+              Our Services
+              <span class="span_left"></span>
+              <span class="span_right"></span>
+            </h1>
+          </div>
+
+          <p class="sec-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor. incididunt ut labore et
+            dolore.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm dipisicing elit, sed do
+            eiusmod
+            tempor.
+          </p>
+
+          <div class="row justify-content-center mt-5">
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card m-auto " style="height: 260px;">
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-3">
+                    <i class="fa-solid fa-cloud-arrow-down  w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Online Marktting </h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute bottom-0 left-0 h-100 flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Online Marktting
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card m-auto " style="height: 260px;">
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-3">
+                    <i class="fa-solid fa-display  w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Web Design </h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute top-0 left-0 w-100 h-100  flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Web Design
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card m-auto " style="height: 260px;">
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-2">
+                    <i class="fa-solid fa-pencil   w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Graphic Design </h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute top-0 left-0 w-100 h-100  flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Graphic Design
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-5">
+              <div class="card m-auto " style="height: 260px;">
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-3">
+                    <i class="fa-solid fa-desktop   w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Web Development </h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute top-0 left-0 w-100 h-100  flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Web Development
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="card m-auto " style="height: 260px;">
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-3">
+                    <i class="fa-solid fa-network-wired   w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Networking </h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute top-0 left-0 w-100 h-100  flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Networking
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+              <div class="card m-auto " style="height: 260px;">
+
+                <div class="card-body justify-content-center align-content-center d-flex py-4">
+
+                  <div class="d-flex flex-wrap justify-content-center align-content-center gap-3">
+                    <i class="fa-brands fa-wordpress-simple  w-100 text-center text-white"></i>
+                    <h1 class="w-100 text-center text-white"> Wordpress Theme</h1>
+                  </div>
+
+                  <div
+                    class=" overlay_content position-absolute top-0 left-0 w-100 h-100  flex-wrap align-items-center justify-content-center bg-white p-3">
+
+                    <h4 class=" text-center mb-2 w-100 fs-2">
+                      Wordpress Theme
+                    </h4>
+
+                    <p class="text-center w-100 ">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor. incididunt ut
+                      labore et
+                      dolore. Lorem ipsum dolor sit amet.
+                    </p>
+
+                    <div class="w-100 d-flex justify-content-center w-100">
+                      <button class="btn btn-primary rounded-5 px-4 py-2">
+                        Read More
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Our_Work" class="sec-padding">
+
+      <div class="container pt-5">
+
+        <div class="w-100 d-flex justify-content-center">
+          <h1 class="h1_sec text-black text-center mb-3">
+            Our Work
+            <span class="span_left"></span>
+            <span class="span_right"></span>
+          </h1>
+        </div>
+
+        <p class="sec-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, nisl sed bibendum pretium, diam nisi
+          mattis lectus, eu varius lorem mauris posuere dui. Proin consequat.
+        </p>
+
+        <div class="d-flex justify-content-center mt-5">
+          <ul class="list-unstyled p-0 mb-4 d-flex flex-wrap justify-content-between gap-4 fs-5">
+            <li class="d-flex gap-3 text-primary">
+              <span>All</span>
+              <span>/</span>
+            </li>
+            <li class="d-flex gap-3">
+              <span> Creative Design</span>
+              <span>/</span>
+            </li>
+            <li class="d-flex gap-3">
+              <span> Developement</span>
+              <span>/</span>
+            </li>
+            <li class="d-flex gap-3">
+              <span> Graphic Design</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/port2-370x390.jpg" height="100%" width="100%" alt="">
+
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between w-100">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/computer-472016_1920-360x380.jpg" height="100%" width="100%" alt="">
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/office-1209640_1920-1-360x380.jpg" height="100%" width="100%" alt="">
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/port7-370x390.jpg" height="100%" width="100%" alt="">
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/suit-869380_1920-360x380.jpg" height="100%" width="100%" alt="">
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card m-auto ">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex ">
+                <img src="assets/Images/Work/port2-5-360x380.jpg" height="100%" width="100%" alt="">
+
+                <div
+                  class=" overlay_content position-absolute bottom-0 left-0 w-100 pb-2 px-3 flex-wrap align-items-center justify-content-center px-3 pt-3 pb-1">
+                  <ul class="proj-content list-unstyled px-3 py-3 m-0 rounded-3 d-flex justify-content-between">
+                    <li>
+                      <h4 class="text-white fs-6 fw-bold ">Developement, Graphic Design</h4>
+                      <h5>
+                        <a href="##" class="text-white text-decoration-none ">Project
+                          Title02</a>
+                      </h5>
+                    </li>
+
+                    <li class="pull-right  d-flex align-items-center">
+                      <a href="##" class="text-white fs-2 text-decoration-none">
+                        +
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="Our_Creative_Team" class="sec-padding sec-bg">
+
+      <div class="container py-5">
+
+        <div class="w-100 d-flex justify-content-center">
+          <h1 class="h1_sec text-black text-center mb-3">
+            Our Creative Team
+            <span class="span_left"></span>
+            <span class="span_right"></span>
+          </h1>
+        </div>
+
+        <p class="sec-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, nisl sed bibendum pretium, diam nisi
+          mattis lectus, eu varius lorem mauris posuere dui. Proin consequat.
+        </p>
+
+        <div class="row justify-content-center mt-5">
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto sec-bg border-0 bg-transparent overflow-hidden">
+
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+
+                <img src="assets/Images/CreativeTeam/team1.png" alt="">
+
+
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+
+                  <div class="overlay_content_header pt-3 ">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+
+
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto border-0 bg-transparent  overflow-hidden">
+
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+
+                <img src="assets/Images/CreativeTeam/team2.png" width="" height="" alt="">
+
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+
+                  <div class="overlay_content_header pt-3">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+
+
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto border-0 bg-transparent  overflow-hidden">
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+                <img src="assets/Images/CreativeTeam/team3.png" width="" height="" alt="">
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+                  <div class="overlay_content_header pt-3">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto border-0 bg-transparent  overflow-hidden">
+
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+
+                <img src="assets/Images/CreativeTeam/team4.png" width="" height="" alt="">
+
+
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+
+                  <div class="overlay_content_header pt-3">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+
+
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto border-0 bg-transparent  overflow-hidden">
+
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+
+                <img src="assets/Images/CreativeTeam/team5.png" width="" height="" alt="">
+
+
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+
+                  <div class="overlay_content_header pt-3">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+
+
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="card m-auto border-0 bg-transparent  overflow-hidden">
+
+              <div class="card-body p-0 justify-content-center align-content-center d-flex flex-wrap "
+                style="height:500px ; ">
+
+                <img src="assets/Images/CreativeTeam/team6.png" width="" height="" alt="">
+
+
+                <div
+                  class=" overlay_content position-absolute  left-0  flex-wrap align-items-center justify-content-center bg-white">
+
+                  <div class="overlay_content_header pt-3">
+                    <h3 class="text-center"> Jen Whyan </h3>
+                    <p class="text-primary mt-2 mb-1 text-center"> Founder </p>
+                  </div>
+
+
+                  <p class="text-center w-100 mt-3 mb-4 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. incididunt ut
+                    labore et
+                    dolore. Lorem ipsum dolor sit amet.
+                  </p>
+
+                  <div class="w-100 d-flex justify-content-center w-100 bg-primary rounded-2">
+
+                    <ul class="d-flex gap-4 m-0 p-0 list-unstyled  py-2 px-3 ">
+                      <li> <a href="#"> <i class="fa-brands fa-facebook-f fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-twitter fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-linkedin-in fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-instagram fs-6 text-white"></i> </a> </li>
+                      <li> <a href="#"> <i class="fa-brands fa-google-plus-g fs-6 text-white"></i> </a> </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="Latest_Blog" class=" sec-padding">
+      <div class="container">
+
+        <div class="w-100 d-flex justify-content-center">
+          <h1 class="h1_sec text-black text-center mb-3">
+            Latest Blog
+            <span class="span_left"></span>
+            <span class="span_right"></span>
+          </h1>
+        </div>
+
+        <p class="sec-p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor, nisl sed bibendum pretium, diam nisi
+          mattis lectus, eu varius lorem mauris posuere dui. Proin consequat.
+        </p>
+
+        <div class="row justify-content-center mt-5">
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 px-3">
+            <div class="card m-auto">
+              <div class="box-image overflow-hidden">
+                <img src="assets/Images/Blog/bg1-360x260.jpg" class="card-img-top" alt="...">
+              </div>
+
+              <div class="card-body d-flex p-0 ">
+                <aside class="d-flex flex-col flex-wrap justify-content-center ">
+                  <i class="fa-brands fa-facebook  w-100 text-center"></i>
+                  <i class="fa-brands fa-twitter  w-100 text-center"></i>
+                  <i class="fa-brands fa-linkedin  w-100 text-center"></i>
+                  <i class="fa-brands fa-github w-100 text-center"></i>
+                  <i class="fa-brands fa-google  w-100 text-center"></i>
+                </aside>
+                <div class="flex-grow-1 py-4 px-4">
+                  <h4 class="mb-2">
+                    Four ways to cheer and plan your self up on Blue
+                  </h4>
+                  <div class="mb-3 d-flex justify-content-between ">
+                    <a>
+                      <i class="fa-regular fa-user"></i>
+                      by dtm_demo
+                    </a>
+                    <a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      19 Dec 2018
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets
+                    dssdolor....
+                  </p>
+                  <button class="border-0 bg-white mt-1">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 px-3">
+            <div class="card m-auto">
+              <div class="box_image overflow-hidden">
+                <img src="assets/Images/Blog/bg3-360x260.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body d-flex p-0">
+                <aside class=" d-flex flex-col flex-wrap justify-content-center">
+                  <i class="fa-brands fa-facebook  w-100 text-center"></i>
+                  <i class="fa-brands fa-twitter  w-100 text-center"></i>
+                  <i class="fa-brands fa-linkedin  w-100 text-center"></i>
+                  <i class="fa-brands fa-github w-100 text-center"></i>
+                  <i class="fa-brands fa-google  w-100 text-center"></i>
+                </aside>
+                <div class="flex-grow-1 py-4 px-4">
+                  <h4 class="mb-2">
+                    Four ways to cheer and plan your self up on Blue
+                  </h4>
+                  <div class="mb-3 d-flex justify-content-between ">
+                    <a>
+                      <i class="fa-regular fa-user"></i>
+                      by dtm_demo
+                    </a>
+                    <a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      19 Dec 2018
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets
+                    dssdolor....
+                  </p>
+                  <button class="border-0 bg-white mt-1">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-4 px-3">
+            <div class="card m-auto">
+              <div class="box_image overflow-hidden">
+                <img src="assets/Images/Blog/gallery2-1-360x260.png" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body d-flex p-0 ">
+                <aside class="d-flex flex-col flex-wrap justify-content-center">
+                  <i class="fa-brands fa-facebook  w-100 text-center"></i>
+                  <i class="fa-brands fa-twitter  w-100 text-center"></i>
+                  <i class="fa-brands fa-linkedin  w-100 text-center"></i>
+                  <i class="fa-brands fa-github w-100 text-center"></i>
+                  <i class="fa-brands fa-google  w-100 text-center"></i>
+                </aside>
+
+                <div class="flex-grow-1 py-4 px-4">
+                  <h4 class="mb-2">
+                    Four ways to cheer and plan your self up on Blue
+                  </h4>
+                  <div class="mb-3 d-flex justify-content-between ">
+                    <a>
+                      <i class="fa-regular fa-user"></i>
+                      by dtm_demo
+                    </a>
+                    <a>
+                      <i class="fa-solid fa-calendar-days"></i>
+                      19 Dec 2018
+                    </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets
+                    dssdolor....
+                  </p>
+                  <button class="border-0 bg-white  mt-1">
+                    Read More
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="bg-black">
+    <div class="foot-top py-5">
+      <div class="container">
+        <div class="row gap-5 gap-sm-0">
+          <div class="col-12 col-md-6 col-lg-4 px-0">
+            <div class="insta-feed  contactinfo-widget px-3">
+              <h3 class="foot-title text-white position-relative">Contact Info</h3>
+              <ul class="address list-unstyled d-flex flex-wrap gap-4 mt-5">
+                <li class="d-flex align-items-center gap-4 w-100 text-white">
+                  <i class="fa-solid fa-location-dot  fs-5 "></i>
+                  <p class="mb-0">123 Street Market, Life Plaza, New York</p>
+                </li>
+                <li class="d-flex align-items-center gap-4 w-100 text-white">
+                  <i class="fa-solid fa-phone-volume fs-5"></i>
+                  <p class="mb-0">987654321</p>
+                </li>
+                <li class="d-flex align-items-center gap-4 w-100 text-white">
+                  <i class="fa-regular fa-envelope fs-5"></i>
+                  <p class="mb-0">team@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-0">
+            <div class="insta-feed posts-list px-3">
+              <h3 class="foot-title text-white position-relative">Posts</h3>
+              <ul class="d-flex flex-wrap mt-5 p-0">
+                <li class="news-post d-flex w-100 gap-4 border-bottom border-secondary">
+                  <figure class="thumb">
+                    <a href="##" class="text-white text-decoration-none">
+                      <img width="100" height="70"
+                        src="https://digitaltemplatemarket.com/wp/tradex-premium/wp-content/uploads/sites/6/2018/11/gallery2-1.png">
+                    </a>
+                  </figure>
+                  <div class="news-content">
+                    <a href="##" class="text-white text-decoration-none">Four
+                      ways to cheer and plan your self up on Blue</a>
+                    <p class="mt-1 text-secondary"><i class="fa fa-calendar"></i> December 19, 2018</p>
+                  </div>
+                </li>
+                <li class="news-post d-flex gap-4 w-100 mt-3">
+                  <figure class="thumb">
+                    <a href="">
+                      <img width="100" height="70"
+                        src="https://digitaltemplatemarket.com/wp/tradex-premium/wp-content/uploads/sites/6/2018/11/bg3.jpg">
+                    </a>
+                  </figure>
+                  <div class="news-content">
+                    <a href="##" class="text-decoration-none text-white">
+                      Fourways to cheer and plan your self up on Blue
+                    </a>
+                    <p class="mt-1 text-secondary"><i class="fa fa-calendar"></i> December 19, 2018</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 px-0">
+            <div class="insta-feed widget_tag_cloud px-3">
+              <h3 class="foot-title text-white position-relative">Popular</h3>
+              <div class="tagcloud mt-5">
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Accountancy </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Affiliate </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> branding </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Construction</a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Design </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Drupal </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Education </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Graphics </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Joomla </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Marketing </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Money </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Tally </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Transform </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Website </a>
+                <a href="##" class="text-decoration-none px-3 py-1 mb-4 ms-2 d-inline-block rounded-5"> Wordpress </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom py-3">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-sm-12 py-3 px-0">
+            <a class="text-primary d-inline-block py-2 text-decoration-none text-center w-100"> © 2024 Developed By MATM
+              Theme</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ---------------  Main File JS ------------------- -->
+  <script src="assets/Js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

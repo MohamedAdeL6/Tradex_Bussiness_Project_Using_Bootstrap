@@ -1,0 +1,670 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* ---------- h1 Element of Section take large font-size  ----------------*/
+.h1_sec {
+	font-size: 45px;
+	position: relative;
+	width: max-content;
+}
+
+.h1_sec::before,
+.h1_sec::after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 55px;
+	background-color: blue;
+}
+
+.h1_sec::before {
+	left: -90px;
+	top: 50%;
+}
+
+.h1_sec::after {
+	right: -90px;
+	top: 50%;
+}
+
+.h1_sec .span_left,
+.h1_sec .span_right {
+	position: absolute;
+	height: 1px;
+	width: 90px;
+	background-color: blue;
+}
+
+.h1_sec .span_left {
+	left: -125px;
+	top: 65%;
+}
+
+.h1_sec .span_right {
+	right: -125px;
+	top: 65%;
+}
+
+.sec-p {
+	max-width: 800px;
+	margin: 20px auto 60px;
+	color: #666666;
+	text-align: center;
+	line-height: 25px;
+}
+
+.sec-padding {
+	padding: 60px 0;
+}
+
+.sec-bg {
+	background-color: #f9f9f9;
+}
+
+.sec_reward_bg {
+	background-color: #ececec;
+}
+
+/* ---  Media Query For Part Of Header Of Section --- */
+@media screen and (max-width: 574px) {
+	.h1_sec {
+		font-size: 22px;
+	}
+
+	.h1_sec::before {
+		left: -65px;
+		top: 47%;
+	}
+
+	.h1_sec .span_left {
+		left: -100px;
+	}
+
+	.h1_sec::after {
+		right: -65px;
+		top: 47%;
+	}
+
+	.h1_sec .span_right {
+		right: -100px;
+	}
+}
+
+
+/*-------------------------------    Section Header in  Header-Bottom    --------------------------- */
+
+#header .header_bottom .navbar-toggler {
+	border: none;
+}
+
+#header .header_bottom .navbar-toggler:focus {
+	box-shadow: none;
+
+}
+
+/*-------------------------------    Section Banner in  Landing Page    --------------------------- */
+#Sec_Banner {
+	height: calc(100vh - 94px)
+}
+
+#Sec_Banner #carouselExampleIndicators .carousel-item img {
+	width: 100%;
+	height: 100%;
+}
+
+#Sec_Banner .carousel-indicators {
+	align-items: end;
+	bottom: 70px;
+	right: 0 !important;
+	margin: 0 30px 0;
+}
+
+#Sec_Banner .carousel-indicators [data-bs-target] {
+	width: 10px;
+	height: 10px;
+	margin-left: 20px;
+	transition: all .5s;
+}
+
+#Sec_Banner .carousel-indicators [data-bs-target]:hover {
+	transform: scale(1.3);
+}
+
+#Sec_Banner .carousel-indicators [data-bs-target].active {
+	transform: scale(1.3);
+	transition: all .7s;
+	animation: bullets 2s linear infinite;
+}
+
+@keyframes bullets {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+
+	30% {
+		transform: scale(1.2) rotate(180deg);
+	}
+
+	50% {
+		transform: scale(1.5) rotate(360deg);
+	}
+
+	85% {
+		transform: scale(1.2) rotate(180deg);
+
+	}
+
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
+
+#Sec_Banner .navbar-toggler {
+	border: none !important;
+}
+
+#Sec_Banner .navbar-toggler:focus {
+	box-shadow: none;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption {
+	position: static;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption h3 {
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: 600;
+	margin: 0 auto 70px;
+	text-transform: capitalize;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption p {
+	max-width: 600px;
+	font-size: 18px;
+	margin: 0 auto 70px;
+	line-height: 25px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+	display: none;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom {
+	border: 2px solid #fff;
+	width: 210px;
+	border-radius: 50px;
+	margin: 10px 20px;
+	padding: 14px 0 15px;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .3s ease;
+	animation: slideInUp 1s both;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom.active {
+	background-color: #0c65ed;
+	border-color: #0c65ed;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom:hover {
+	background-color: #0c65ed;
+	border-color: #0c65ed;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom {
+	border-radius: 50px;
+	text-transform: capitalize;
+	line-height: 1;
+	font-weight: 600;
+	transition: all .3s ease;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom::after {
+	background: #fff;
+	content: "";
+	height: 155px;
+	left: -75px;
+	opacity: .2;
+	position: absolute;
+	top: -50px;
+	transform: rotate(35deg);
+	transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 50px;
+	z-index: -1;
+}
+
+#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop .btn-custom:hover::after {
+	left: 120%;
+}
+
+@keyframes slideInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(2000px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media screen and (min-width: 574px) {
+	#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption .btn-grop {
+		flex-direction: row;
+		justify-content: center;
+		;
+	}
+
+	#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption h3 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption p {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 993px) {
+	#Sec_Banner {
+		height: calc(100vh - 165.7px)
+	}
+
+	#Sec_Banner .carousel-indicators {
+		flex-direction: column;
+		bottom: 250px;
+		width: max-content;
+		margin-left: auto;
+	}
+
+	#Sec_Banner .carousel-inner .carousel-item .overlay .carousel-caption h3 {
+		font-size: 60px;
+	}
+}
+
+/*--------------------------------------    Section About Us    ---------------------------------- */
+#about h5 {
+	text-transform: capitalize;
+	transition: all .3s ease;
+	text-align: justify;
+	font-size: 18px;
+}
+
+#about p {
+	font-size: 14px;
+	color: #666666;
+}
+
+#about .sec-p {
+	font-size: 17PX;
+}
+
+#about .detail_box {
+	position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	padding: 15px 20px 0;
+	box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+#about .detail_box ul li {
+	display: table;
+	padding: 0 10px 15px;
+}
+
+#about i {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 22px;
+	width: 45px;
+	line-height: 1;
+	transition: all .3s ease;
+}
+
+#about .detail_content {
+	display: table-cell;
+	vertical-align: middle;
+	border-left: 1px solid #ccc;
+	padding-left: 12px;
+}
+
+#about .detail_box ul li:hover h5,
+#about .detail_box ul li:hover i {
+	color: #0c65ed;
+}
+
+@media screen and (max-width: 767px) {
+	#about img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.sec-padding {
+		padding: 30px 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#about .detail_box {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 370px;
+		margin-bottom: 0px;
+		padding: 10px 20px 0;
+	}
+
+	#about .detail_box ul li:last-child {
+		padding: 0 10px 10;
+	}
+
+	#about .detail_box {
+		max-width: 340px;
+	}
+
+	#about img {
+		width: 67%;
+	}
+
+	#about i {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#about .detail_box {
+		top: 10px;
+		left: 13px;
+		max-width: 300px;
+		padding: 15px 3px 0;
+	}
+
+	#about .text-end {
+		height: 100%;
+	}
+
+	#about img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#about .detail_box {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 20px;
+		max-width: 350px;
+		/* padding: 10px 0 0; */
+	}
+
+	#about p,
+	#about h5 {
+		text-align: center;
+	}
+
+	#about .row .col-md-12 p+div.w-100 {
+		justify-content: start;
+	}
+}
+
+/* --------------------------------------    Section Our Reward   ---------------------------------- */
+#reward .row .col-12 .d-flex div.rounded-2 {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+}
+
+#reward .row .col-12 .d-flex div.rounded-2 i {
+	font-size: 35px;
+	text-align: center;
+}
+
+#reward .row .col-12 .d-flex .counter_box h3 {
+	font-size: 35px;
+	width: max-content;
+	margin-bottom: 8px;
+}
+
+#reward .row .col-12 .d-flex .counter_box p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 25px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+}
+
+/* --------------------------------------    Section Our Services   ---------------------------------- */
+#Our_Services .fa-solid,
+#Our_Services .fa-brands {
+	font-size: 55px;
+}
+
+/* ---------- overlay  for  Section  -------- */
+#Our_Services .overlay_sec {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* -------- overlay  for card_box --------- */
+#Our_Services .card {
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 1px solid #6a6968;
+}
+
+/* ------ prossec of hover that  --------- */
+#Our_Services .card-body .overlay_content {
+	display: none;
+	border-radius: .375rem;
+}
+
+#Our_Services .col-12 .card:hover .card-body .overlay_content {
+	display: flex;
+}
+
+/* ---------------------------------------    Section Our Work   ------------------------------------ */
+#Our_Work h1 {
+	font-size: 37px;
+}
+
+#Our_Work .col-12 .card:hover {
+	box-shadow: 2px 2px 15px 10px #d7d7d7;
+}
+
+/* ----- prossec of hover that ----- */
+#Our_Work .card-body,
+#Our_Work .card-body img {
+	border-radius: .375rem;
+	cursor: pointer;
+}
+
+#Our_Work .card-body .overlay_content {
+	display: none;
+}
+
+#Our_Work .col-12 .card:hover .card-body .overlay_content {
+	display: flex;
+}
+
+#Our_Work .card-body .overlay_content ul {
+	background-color: rgba(12, 101, 237, .8);
+}
+
+/* ------------------------------------    Section Our Creative Team   ----------------------------- */
+#Our_Creative_Team .card-body .overlay_content {
+	border-radius: .375rem;
+	top: 80%;
+	padding: 0 35px;
+	transition: all .5s;
+}
+
+#Our_Creative_Team .card-body .overlay_content .card-body img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#Our_Creative_Team .overlay_content_header {
+	border-bottom: 2px solid #000;
+	padding-bottom: 10px;
+}
+
+#Our_Creative_Team .col-12 .card:hover .overlay_content_header {
+	border: none;
+}
+
+#Our_Creative_Team .col-12 .card:hover .card-body .overlay_content {
+	top: 45%;
+}
+
+#Our_Creative_Team .col-12 .card:hover .overlay_content_header {
+	border: none;
+	padding-bottom: 5px;
+}
+
+/* -----------------------------------    Section Latest_Blog   ------------------------------------- */
+#Latest_Blog .row .col-12 .card {
+	cursor: pointer;
+}
+
+#Latest_Blog .row .col-12 .card img {
+	transition: all .5s;
+}
+
+#Latest_Blog .row .col-12 .card .card-body {
+	border-bottom-left-radius: .375rem;
+}
+
+#Latest_Blog .row .col-12 aside {
+	background-color: #000;
+	color: #fff;
+	width: 120px;
+	padding-top: 32px;
+	transition: all .5s;
+	border-bottom-left-radius: .375rem;
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 h4 {
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 h4+div {
+	padding: 15px 0;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 h4+div::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 25%;
+	height: 2px;
+	background-color: #0c65ed;
+	transition: all .5s;
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 button i {
+	transition: all .5s;
+	transform: translateX(5px);
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 button:hover i {
+	transform: translateX(12px);
+}
+
+#Latest_Blog .row .col-12 aside+div.py-4 button:hover {
+	color: #0c65ed;
+}
+
+#Latest_Blog .row .col-12 .card:hover aside {
+	background-color: #0c65ed;
+}
+
+#Latest_Blog .row .col-12 .card:hover aside+div.py-4 h4+div::after {
+	width: 100%;
+}
+
+#Latest_Blog .row .col-12 .card:hover img {
+	transform: scale(1.1) rotate(-2deg);
+}
+
+/* ------------------------------------------    Section Footer  ---------------------------------- */
+#footer .foot-top .insta-feed .foot-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 150%;
+	height: 2px;
+	background-color: blue;
+	width: 15%;
+}
+
+#footer .foot-bottom {
+	box-shadow: 1px 1px 5px 4px #282828;
+}
+
+#footer .tagcloud .text-decoration-none {
+	background-color: #fff;
+	color: #000;
+	transition: all .5s;
+}
+
+#footer .tagcloud .text-decoration-none:hover {
+	background-color: blue;
+	color: #fff;
+}
